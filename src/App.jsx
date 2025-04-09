@@ -1,13 +1,19 @@
-// App.jsx
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Tregister from './pages/Tregister';
+import Gacha from './pages/Gacha';
+import AdminDashboard from './pages/AdminDashboard';
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <h1>Welcome to the Gacha Game</h1>
-      {/* UI Component หรือ logic ที่จะทำการแสดงผล */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/tregister" element={<Tregister />} />
+        <Route path="/gacha" element={<Gacha />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
