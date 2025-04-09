@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  root: './', // กำหนดให้ root เป็น directory หลักของโปรเจค
-  build: {
-    outDir: 'dist', // ตั้งค่า output directory
-  },
+  plugins: [react()],
+  base: '/',  // ทำให้เส้นทาง URL ถูกต้อง
 });
