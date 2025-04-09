@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
-import Tregister from './pages/Tregister';
+import Tregister from './pages/register';
 import Gacha from './pages/Gacha';
 import AdminDashboard from './pages/AdminDashboard';
 
