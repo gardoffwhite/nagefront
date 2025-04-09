@@ -6,6 +6,8 @@ import Gacha from './pages/Gacha';
 import AdminDashboard from './pages/AdminDashboard';
 
 export default function App() {
+  console.log("App component is rendered");
+
   return (
     <Router>
       <Routes>
