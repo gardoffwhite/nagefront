@@ -10,7 +10,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/tregister" element={<Tregister />} />
+        <Route path="/tregister" element={<register />} />
         <Route path="/gacha" element={<Gacha />} />
         <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
