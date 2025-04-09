@@ -1,4 +1,9 @@
 import React from 'react';
+import './style.css';  // นำเข้าไฟล์ CSS
+
+// โค้ดของคุณที่เหลือ
+
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
