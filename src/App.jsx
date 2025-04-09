@@ -1,27 +1,25 @@
-import React from 'react';
-import './style.css';  // นำเข้าไฟล์ CSS
-
-// โค้ดของคุณที่เหลือ
-
+// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Gacha from './pages/Gacha';
 import AdminDashboard from './pages/AdminDashboard';
+import './style.css';  // นำเข้าไฟล์ CSS
 
 export default function App() {
-  console.log("App component is rendered");
-
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/gacha" element={<Gacha />} />
-        <Route path="/admin" element={<AdminDashboard />} />
-      </Routes>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/gacha" element={<Gacha />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
-
